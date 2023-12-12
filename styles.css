@@ -1,0 +1,108 @@
+body {
+  text-align: center;
+  background-image: url("./img/bckgr.png");
+}
+
+#level-title {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2rem;
+  margin:  1%;
+  color: rgb(250, 247, 247);
+  text-shadow: 5px 2px #3D3B40;
+    letter-spacing: 5px;
+    font-weight: bolder;
+}
+
+h5{
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.5rem;
+  color: #c7c6c2;
+    text-shadow: 5px 2px #3D3B40;
+    line-height: 25px;
+    letter-spacing: 5px;
+}
+
+.container {
+  display: block;
+  width: 50%;
+  margin: auto;
+
+}
+
+.btn {
+  margin: 10px;
+  display: inline-block;
+  height: 130px;
+  width: 130px;
+  border: 10px solid #3E3C3D;
+  box-shadow: 0 0 20px #242323;
+  border-radius:50%;
+}
+
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+.red {
+  background-color: rgb(206, 46, 46);
+  background-image: url("./img/1.png");
+}
+
+.green {
+  background-color: rgb(85, 212, 85);
+  background-image: url("./img/2.png");
+}
+
+.blue {
+  background-color: rgb(36, 36, 138);
+  background-image: url("./img/4.png");
+}
+
+.yellow {
+  background-color: rgb(233, 233, 82);
+  background-image: url("./img/3.png");
+}
+
+.pressed {
+  box-shadow: 0 0 20px #d3d0d0;
+  background-color: grey;
+}
+
+.flash {
+  animation: flashAnimation 0.5s alternate infinite;
+}
+
+@keyframes flashAnimation {
+  0% {
+      opacity: 1;
+  }
+  100% {
+      opacity: 0;
+  }
+}
+
+@media screen and (min-width: 1419px) {
+  #level-title {
+    font-size: 3rem;
+    margin:  2.5% 5% 2% 5%;
+    letter-spacing: 5px;
+    font-weight: bolder;
+  }
+  
+  h5{
+    font-size: 1.5rem;
+    line-height: 35px;
+    letter-spacing: 5px;   
+  }
+  
+  .btn {
+    margin: 15px;
+    height: 200px;
+    width: 200px;
+  }
+  .pressed {
+    box-shadow: 0 0 20px #d3d0d0;
+    background-color: grey;
+  }
+}
